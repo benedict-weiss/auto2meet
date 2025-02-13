@@ -1,1 +1,25 @@
-
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar Coordinator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Schedule Your Availability</h1>
+  
+  <!-- Input for the ICS URL -->
+  <div>
+    <label for="ics-url">Google Calendar ICS URL (must be public):</label>
+    <input type="text" id="ics-url" placeholder="https://calendar.google.com/calendar/ical/..." />
+    <button id="import-btn">Import Calendar</button>
+  </div>
+  
+  <!-- Container for the calendar grid -->
+  <div id="calendar-grid"></div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
