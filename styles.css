@@ -1,0 +1,28 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  margin-top: 20px;
+}
+
+.slot {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slot.busy {
+  background-color: #f99;
+  cursor: not-allowed;
+}
+
+.slot.available {
+  background-color: #9f9;
+}
